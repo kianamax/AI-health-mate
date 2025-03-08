@@ -17,7 +17,7 @@ session_start();
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to bottom right, #4F46E5, #7C3AED);
+            background: linear-gradient(to bottom right, #007bff, #00c6ff); /* Match dashboard gradient */
             color: #fff;
             height: 100vh;
             margin: 0;
@@ -34,6 +34,7 @@ session_start();
             max-width: 400px;
             width: 100%;
             animation: fadeIn 1s ease-in-out;
+            border: 1px solid rgba(0, 123, 255, 0.3); /* Subtle blue border */
         }
         .form-container h2 {
             text-align: center;
@@ -50,17 +51,17 @@ session_start();
         }
         .form-control:focus {
             box-shadow: none;
-            border: 1px solid #7C3AED;
+            border: 1px solid #00bcd4; /* Cyan focus border */
         }
         .btn-custom {
-            background-color: #7C3AED;
+            background-color: #00bcd4; /* Cyan button */
             color: #fff;
             border-radius: 10px;
             transition: 0.3s;
             font-weight: 600;
         }
         .btn-custom:hover {
-            background-color: #4F46E5;
+            background-color: #0097a7; /* Darker cyan on hover */
             color: #fff;
         }
         .toggle-btn {
@@ -71,9 +72,10 @@ session_start();
             border-radius: 10px;
             text-align: center;
             transition: 0.3s;
+            background-color: rgba(0, 123, 255, 0.2); /* Subtle blue background */
         }
         .toggle-btn.active {
-            background-color: #7C3AED;
+            background-color: #00bcd4; /* Active toggle matches button */
         }
         /* Fade-in Animation */
         @keyframes fadeIn {

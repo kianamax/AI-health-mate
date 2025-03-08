@@ -76,3 +76,12 @@ CREATE TABLE appointments (
     FOREIGN KEY (doctor_id) REFERENCES users(id),
     FOREIGN KEY (patient_id) REFERENCES users(id)
 );
+CREATE TABLE health_data (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    patient_id INT NOT NULL,
+    weight DECIMAL(5,2),
+    blood_pressure VARCHAR(20),
+    heart_rate INT,
+    sleep_hours VARCHAR(50),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
